@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beats</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .mainvidparent {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #1pagebg {
+        height: 700px;
+        width: 90%;
+      }
+      #pg2 {
+        height: 700px;
+        width: 100%;
+        background-color: rgb(240, 240, 240);
+      }
+      .mainpgvid {
+        width: 100%;
+        height: 100%;
+      }
+      .card-parent {
+        width: 85%;
+        height: 500px;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        /* border: 1px solid black; */
+      }
+      .cards {
+        width: 30%;
+        height: 100%;
+        border-radius: 30px;
+        /* border: 1px solid black; */
+        float: left;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .headings {
+        width: 100%;
+        margin-top: 20px;
+        /* height: 20%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .itemimages {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .items{
+        width: 80%;
+        height: 80%;
+        border-radius: 20px;
+      }
+      #pg3{
+        width: 100%;
+        height: 900px;
+        background-color: rgb(240, 240, 240);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid black; */
+        background-color: rgb(52,170,179);
+      }
+     .left{
+        width: 50%;
+        height: 100%;
+        /* border: 1px solid black; */
+      
+        /* background-color: rgb(154,214,217); */
+      }
+      .right{
+        /* width: ; */
+        height: 100%;
+        /* border: 1px solid black; */
+      }
+      .lefttext{
+
+        width: 450px;
+        height: 200px;
+        /* border: 1px solid black; */
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        margin-top: 410px;
+        margin-left: 0px;
+       font-family: neuzeit-grotesk, "Helvetica Neue", Helvetica, sans-serif
+       
+       
+      }
+      .btnmain{
+        height: 100px;
+        width: 150px;
+        /* border: 1px solid black; */
+      }
+      .rightimg{
+        width: 800px;
+        height: 800px;
+        /* border: 1px solid black; */
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 45px;
+      }
+      .caseimg{
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(240, 240, 240)">
+    <!-- Page 1 -->
+    <div id="mainpgvid">
+      <div id="mainvidparent">
+        <video
+          class="mainpgvid"
+          autoplay
+          loop
+          src="audvid files/Beats3_developfiles.mp4"
+        ></video>
+      </div>
+    </div>
+
+    <!-- Page 2  -->
+    <!-- main -->
+    <div id="pg2">
+      <h3
+        style="
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          font-size: 40px;
+          text-align: center;
+          margin-top: 50px;
+        "
+      >
+        Power Your Worlouts
+      </h3>
+      <!-- Cards  -->
+
+      <!-- card parent-->
+      <div class="card-parent">
+
+
+        <!-- card-1 -->
+        <div class="cards">
+            <div class="headings">
+                <h3 style="font-size: 30px;">Powerbeats Fit</h3>
+                <p style="font-size: 20px;">₹24,900</p> <!-- Separate tag = separate line in flex-column -->
+            </div>
+            <!-- Item images -->
+            <div class="itemimages">
+                <img class="items" src="https://www.beatsbydre.com/content/dam/beats/web/product/earbuds/powerbeats-fit/pdp/product-carousel/orange/pc-pbfit-orange-with-case.jpg.large.2x.jpg" alt="Powerbeats Pro 2" width="100%" height="300px">
+
+            </div>
+
+        </div>
+
+
+        <!-- card-2 -->
+        <div class="cards">
+            <div class="headings">
+                <h3 style="font-size: 30px;">Powerbeats Pro 2</h3>
+                <p style="font-size: 20px;">₹22,900</p> <!-- Separate tag = separate line in flex-column -->
+            </div>
+            <div class="itemimages">
+                <img class="items" src="https://www.beatsbydre.com/content/dam/beats/web/product/earbuds/powerbeats-pro-2/pdp/product-carousel/quick-sand/pc-pbpro2-quick-sand-p01.jpg.large.2x.jpg" alt="Powerbeats Pro 2" width="100%" height="300px">
+
+            </div>
+        </div>
+
+
+        <!-- card-3 -->
+        <div class="cards">
+            <div class="headings">
+                <h3 style="font-size: 30px;" >Beats Solo 4</h3>
+                <p  style="font-size: 20px;" >₹22,900</p> <!-- Separate tag = separate line in flex-column -->
+            </div>
+            <!-- item images  -->
+            <div class="itemimages">
+                <img class="items" src="https://www.beatsbydre.com/content/dam/beats/web/product/headphones/solo4-wireless/pdp/product-carousel/slate-blue/blue-01-solo4.jpg.large.2x.jpg" alt="Powerbeats Pro 2" width="100%" height="300px">
+
+            </div>
+        </div>
+      </div>      
+    </div>
+
+
+ <!-- Page -3 -->
+
+    <!-- main DIV -->
+    <div id="pg3">
+        <div class="left">
+            <!-- text area  -->
+             <div class="lefttext">
+                <h3 >
+                    Beats iPhone 17 
+                    <br>
+                    Series cases 
+                </h3>
+                <br>
+                
+
+             </div>
+             
+             
+        </div>
+        <div class="right">
+            <div class="rightimg">
+                <img class="caseimg" src="https://www.beatsbydre.com/content/dam/beats/web/home/hero/phone-cases-2025/phone-cases-hero.png.large.2x.png" alt="">
+            </div>
+        </div>
+     </div>
+
+
+
+  </body>
+</html>
