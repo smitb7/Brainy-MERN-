@@ -1,17 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
-</head>
-<body>
+  </head>
+  <body>
     <form action="" method="post">
-        name : <input type="text" name="name" id="name"> <br><br>
-        email : <input type="email" name="email" id="email"> <br> <br>
-        password : <input type="password" name="password" id="password">
+
+        <fieldset>
+
+        <legend> <mark> User Form </mark>  </legend>
+        <!-- Name  -->
+      <label for="Name">Name : </label>
+      <input type="text" name="name" id="name" required value="ABC" readonly/> <br /><br />
+
+      <!-- Email -->
+      <label for="Email">Email : </label>
+      <input type="email" name="email" id="email" required size="20"/> <br />
+      <br />
+
+      <!-- Password -->
+      <label for="Password">Password : </label>
+      <input type="password" name="password" id="password" required />
+      <br />
+      <br />
+
+      <!-- Radio Buttons -->
+      <label for="choose"> Choose Your favorite Web Language : </label>
+
+      <input type="radio" name="fav_lang" id="" value="JavaScript" />
+      <label for="JavaScript">JavaScript</label>
+
+      <input type="radio" name="fav_lang" id="" value="Python" />
+      <label for="Python">Python</label>
+
+      <input type="radio" name="fav_lang" id="" value="Java" />
+      <label for="Java">Java</label>
+      <br />
+      <br />
+
+
+        <!-- Checkboxs -->
+
+        <label for="Colors :"> Select Fav Color</label>
+
+        <!-- Red -->
+        <input type="checkbox" name="color1" id="" value="Red" disabled/>
+        <label for="Red"> Red</label>
+
+        <!-- Blue -->
+        <input type="checkbox" name="color2" id="" value="Blue" />
+        <label for="Blue">Blue</label>
+
+        <!-- Blue -->
+        <input type="checkbox" name="color3" id="" value="Green" />
+        <label for="Green">Green</label>
         <br>
-        <button type="submit"> Submit</button>
-    </form>
-</body>
+        <br>
+        <!-- Date  -->
+        <label for="DOB"> D.O.B : </label>
+        <input type="date" name="dob" id="" required>
+        <br>
+        <br>
+        <label for="Datemax">Enter a date before 2002 -01-01 : </label>
+        <input type="date" name="Datemax" id="" max="2001-01-31" required>
+        <br> 
+        <br>
+
+        <!-- Date and Time  -->
+        <label for="datetime">Enter date and time : </label>
+        <input type="datetime-local" name="datetime" id="" required>
+        <br>
+
+<br>
+
+    <!-- image -->
+         <label for="Image"> Image :</label>
+         <input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr78qHY79fdqYmlWtguEaX7b6Hhg14he7pUQ&s" alt="Crashed" >
+<br>
+<br>
+    <!-- file -->
+        <label for="file">Select Your File : </label>
+        <input type="file" name="file" id="">
+<br><br>
+    <!-- number -->
+        <label for="Age"> Age : </label>
+        <input type="number" name="age" min="18" multiple>
+<br><br>
+
+    <!-- Telephonic field  -->
+        <label for="Phone"> Enter your Phone no : </label>
+        <input type="tel" name="Phone" id="" pattern="[0-9]{3}-[0-9]{4}[0-9]{3}" placeholder="133-1232-543" required>
+<br> <br>
+        <!-- Select (Dropdown)-->
+         <label for="Languages"> Web Langs : </label>
+
+         <select name="lang" id="" size="3" multiple>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>  
+            <option value="Node">Node</option>
+            <option value="React">React</option>
+         </select>
+<br><br>
+  
+    <!-- Textarea -->
+    <label for="Message"> Message : </label>
+    <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your message here..."></textarea>
+
+<br><br>
+      <button type="submit" >Submit</button>
+    </fieldset>
+    </form> 
+  </body>
 </html>
