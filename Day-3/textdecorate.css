@@ -1,0 +1,7 @@
+h2{
+    color: rgb(143, 34, 34);
+    text-align: justify;
+    /* text-align-last: c; */
+    direction: rtl;
+    unicode-bidi: bidi-override; 
+}
