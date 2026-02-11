@@ -10,9 +10,9 @@ a:link{
     text-decoration: none;
 }
 
-/* Visited */
+/* Visited */ 
 a:visited{
-    color: lightgreen;
+    color: darkmagenta;
 }
 
 /* mouse hover link */
@@ -23,4 +23,39 @@ a:hover{
 /* selected link */
 a:active{
     color: magenta;
+}
+
+.btn:link, .btn:visited{
+    background-color: #ff1d58;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+   
+}
+
+.btn:hover, .btn:active{
+    background-color: #875868;
+    color: white;
+    font-size: 19px;
+}
+
+
+.btn2:link, .btn2:visited{
+
+    background-color: black;
+    color: white;
+    border: 3px solid rgb(16, 146, 158);
+    border-radius: 5px;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+   
+}   
+
+.btn2:hover, .btn3:active{
+   
+    background-color: rgb(16, 146, 158);
+
+
 }
