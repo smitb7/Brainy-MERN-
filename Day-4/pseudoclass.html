@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo classes</title>
+    <style>
+      /* pseudo classes   */
+      /* p {
+        display: none;
+        background-color: lightcoral;
+        height: 50px;
+        padding: 20px;
+      }
+      div:hover p {
+        display: block;
+        width: 150px;
+      } */
+
+      /* pseudo elements */
+        p::first-line{
+            fonnt-variant: small-caps;
+            color: whitesmoke;
+        }
+        p::first-letter{
+            font-size: 4em;
+            color: lightcoral;
+        }
+        p{
+            background-color: crimson;
+        }
+
+        /* change before */
+         h1::before{
+            content: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn3VvlivWVCS9Dr6MSNVzoMEXguyPKDJXztQ&s");
+            color: lightcoral;
+         }
+         /* selection color change when we are selecting something  */
+         ::selection{
+            background-color: black;
+            color: white;
+         }
+
+
+      
+    </style>
+  </head>
+  <body>
+
+    <!-- selector:pseudo-class{
+        property: value;
+    } -->
+    <!-- <h1>Pseudo Classes </h1>
+    <div>
+      Hover over me..!
+
+      <p>I am hidden</p>
+
+
+
+      
+    </div> -->
+
+    <h1>Psuedo Elements </h1>
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, aut omnis. Aperiam perferendis deleniti quo, nulla distinctio iste ducimus provident tenetur eaque illum nobis vel sequi! Suscipit fugit aliquam minima ut vitae nihil ducimus. Nesciunt.
+      </p>
+  </body>
+</html>
