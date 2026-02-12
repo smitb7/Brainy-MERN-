@@ -1,41 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transitions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glow Button</title>
 
-    <style>
-        div{
-            width: 50px;
-            height: 50px;
-            background-color: red;
-            transition: width 2s ,height 4s ;
-            transition-timing-function: ease-in;
-            
-            /* transition-delay: 2s; */
+<style>
 
-        }
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
 
-        div:hover{
-            width: 300px;
-            height: 300px;
+.glow-on-hover {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
 
-        }
-        p{
-            height: 100px;
-            width: 100px;
-            background-color: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
-            transition: background-color 2s;
-        }
-    </style>
+/* Glow Layer */
+.glow-on-hover::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 10px;
+    background: linear-gradient(
+        45deg,
+        red, orange, yellow, green,
+        blue, indigo, violet
+    );
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    animation: glowing 20s linear infinite;
+}
 
+/* Inner Button Background */
+.glow-on-hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #111;
+    z-index: -1;
+}
 
+/* Click Effect */
+.glow-on-hover:active {
+    color: black;
+}
+
+.glow-on-hover:active::after {
+    background: transparent;
+}
+
+/* Animation */
+@keyframes glowing {
+    0%   { background-position: 0 0; }
+    50%  { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+</style>
 </head>
+
 <body>
-    <h1>Transition Property</h1>
-   <p>
-    Some content 
-   </p>
+<button class="glow-on-hover">Hover Me</button>
 </body>
 </html>
