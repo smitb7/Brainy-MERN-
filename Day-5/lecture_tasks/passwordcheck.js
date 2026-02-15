@@ -1,7 +1,7 @@
-let UserInput_password = "admin123";   // input
+let UserInput_password = "admin12";   // input
 let actualpassword = "admin123"       // actual passwored which is stored in database 
 
-if (password == password) {
+if (UserInput_password == actualpassword) {
   console.log("login successfull...!");
 } else {
   console.log(
