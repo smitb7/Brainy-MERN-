@@ -1,5 +1,4 @@
 # Brainy-MERN-
 Learnings 
 
-
-- calculate 
+in every folder (eg. day-1, day-2...), there's a Tasks folder , in that forlder you can see all the given tasks in MERN sheet. 

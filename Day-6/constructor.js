@@ -11,7 +11,10 @@ function Student(first, last , age , color ) {
 
 const Studentram = new Student("Ram ", "Raghav", "4000", "Medium")
 
-console.log(Studentram);
+// console.log(Studentram);
+
+
+console.log(Studentram[2]);
 
 
 // so that we can use this again and again for adding the students,  like this is a blue print of the adding the students. 
