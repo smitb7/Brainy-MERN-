@@ -1,16 +1,15 @@
+let totalpurchaseammount = 120;
 
-let totalpurchaseammount = $120;
-let discount = totalpurchaseammount * 0.10 ;
-let afterdiscountpayable = totalpurchaseammount - discount ;
+if (totalpurchaseammount > 100) {
+  let discount = totalpurchaseammount * 0.1;
+  let afterdiscountpayable = totalpurchaseammount - discount;
 
-if(totalpurchaseammount > $100){
-    
-    console.log("You are applicable for 10% Discount and you have to pay, you have to pay" + );
-    
-
+  console.log(
+    "You are applicable for 10% Discount and you have to pay , " +
+      afterdiscountpayable
+  );
+} else {
+  console.log(
+    "You aren't eligible for discount but we will give you 5 toffieess..🤓 ╾━╤デ╦︻ (•_- )!!"
+  );
 }
-else{
-    console.log("You aren't eligible for discount but we will give you 5 toffieess..🤓 ╾━╤デ╦︻ (•_- )!!");
-    
-}
-
