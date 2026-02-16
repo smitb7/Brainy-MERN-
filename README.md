@@ -1,2 +1,5 @@
 # Brainy-MERN-
 Learnings 
+
+
+- calculate 
