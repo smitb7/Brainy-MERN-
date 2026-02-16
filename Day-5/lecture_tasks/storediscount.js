@@ -13,3 +13,6 @@ if (totalpurchaseammount > 100) {
     "You aren't eligible for discount but we will give you 5 toffieess..🤓 ╾━╤デ╦︻ (•_- )!!"
   );
 }
+
+
+
