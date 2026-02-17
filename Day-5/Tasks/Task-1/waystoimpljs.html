@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Inline JS </title>
+</head>
+<body>
+    <div>
+        <button onclick="alert('This is an Inline JS')">
+            Inline JS...!
+        </button>
+    </div>
+
+    <div>
+        <button onclick="changeTextfun()" > Change text </button>
+        <p id="ct">
+            Befor click....!!
+        </p>
+    </div>
+
+    <script>
+        console.log('This is your internal JS');
+    </script>
+
+    <script src="externaljs.js">
+
+    </script>
+</body>
+</html>
