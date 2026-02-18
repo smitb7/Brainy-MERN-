@@ -2,13 +2,15 @@
 import React from "react";
 
 const Button = (props) => {
+
+    console.log(props.array);  //check in brows console
+    
   return (
     <>
-      <button>{props.btn }</button>
 
+       
+      <button style={{backgroundColor: props.backgroundColor , paddingTop: "20px", }}>{props.btn }</button>
       
-
-
 
     </>
   );
