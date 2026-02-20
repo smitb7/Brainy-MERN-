@@ -2,6 +2,10 @@ import logo from "./logo.svg";
 import "./App.css";
 import Button from "./button";
 import Goal from "./Goal";
+import Garage from "./Garage";
+import Cars from "./cars";
+
+
 
 function App() {
 
@@ -52,6 +56,11 @@ function App() {
 
     <Goal isGoal={true} />
 
+    {/* Cynamic routs lecture  */}
+
+      <Garage />
+
+      {/* <Cars /> */}
     </>
   );
 }
