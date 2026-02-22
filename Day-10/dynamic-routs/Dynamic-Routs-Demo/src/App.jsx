@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Nopage from "./pages/Nopage";
 import Contacts from "./pages/Contacts";
+import "./index.css"
 
 
 const App = () => {
