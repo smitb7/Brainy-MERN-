@@ -1,0 +1,29 @@
+/* .cardmain{
+  height: 700px;
+  width: 800px;
+  /* display: flex;
+  flex-direction: */
+
+
+.cards {
+  height: 500px;
+  width: 300px;
+  /* display: flex; */
+  background-color: lightslategrey;
+  border: 1px solid red;
+  border-radius: 50px;
+}
+.heading {
+  /* padding: 20px; */
+  text-align: center;
+  color: whitesmoke;
+}
+.img {
+  height: 300px;
+  width: 200px;
+  margin-left: 40px;
+  border-radius: 50px;
+}
+.desc{
+  color: lightcyan;
+}
