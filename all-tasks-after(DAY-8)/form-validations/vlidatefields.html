@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task - Form Validation </title>
+
+    <style>
+      .error {
+        color: red;
+        font-size: 15px;
+      }
+      #button{
+            padding: 10px 20px;
+            /* cursor: pointer; */
+        }
+    </style>
+  </head>
+  <body>
+    <form action="" id="validation_form">
+      <br />
+
+      <div id="form-group">
+        <!-- Username   -->
+        <label for="">Username : </label>
+        <input type="text" id="Username" />
+
+        <!-- for error msg -->
+        <div class="error" id="usernameerror"></div>
+        <br /><br />
+      </div>
+
+      <div id="form-group">
+        <!-- Email -->
+        <label for=""> Email : </label>
+        <input type="text" id="Email" />
+        <!-- for error msg -->
+        <div class="error" id="emailerror"></div>
+
+        <br />
+        <br />
+      </div>
+
+      <!-- Submit Button -->
+      <button id="button">Submit</button>
+
+    </form>
+    <script src="./vlidatefields.js"></script>
+  </body>
+</html>
