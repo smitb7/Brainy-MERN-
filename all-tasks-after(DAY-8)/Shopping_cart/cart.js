@@ -39,10 +39,7 @@ function removeItem(itemId) {
 
     
     const targetIndex = cart.items.findIndex(
-        (item)=>{
-
-            return item.itemId === itemId
-        }
+        (item)=> item.itemId === itemId
     )
     
     cart.items.slice(targetIndex, 1)
@@ -57,4 +54,4 @@ function removeItem(itemId) {
 
 // removeItem(1)
 
-console.log(cart.items);
+// console.log(cart.items);
