@@ -1,9 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Button from "./button";
 import Goal from "./Goal";
 import Garage from "./Garage";
-import Cars from "./cars"; 
+// import Cars from "./cars"; 
 
 
 
