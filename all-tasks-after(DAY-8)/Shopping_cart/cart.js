@@ -63,7 +63,7 @@ function calculateTotalprice(){
     let pricesum = 0;
     // let discount =0;
     // so now we will calculate the total price of the items which is store in to the cart 
-    for(i=0; i<cart.items.length; i++){
+    for(let i=0; i<cart.items.length; i++){
 
         pricesum += cart.items[i].price * cart.items[i].quantity;
 
@@ -78,7 +78,7 @@ function calculateTotalprice(){
 }
 
 
-console.log(calculateTotalprice())
+calculateTotalprice()
 
 
 
@@ -89,7 +89,7 @@ function itemDiscount(counteddescount) {
 
   
 }
-console.log(itemDiscount(10));
+itemDiscount(10)
 
 
 
