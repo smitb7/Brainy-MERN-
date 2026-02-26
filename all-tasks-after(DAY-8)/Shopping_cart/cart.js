@@ -2,8 +2,8 @@ let cart = {
   items: [
     { itemId: 1, itemName: "Chair", price: 10000, quantity: 1 },
     { itemId: 2, itemName: "A/C", price: 50000, quantity: 1 },
-    { itemId: 1, itemName: "Washing Machine", price: 25000, quantity: 1 },
-    { itemId: 2, itemName: "A/C", price: 50000, quantity: 1 },
+    { itemId: 11, itemName: "Washing Machine", price: 25000, quantity: 1 },
+    { itemId: 12, itemName: "A/C", price: 50000, quantity: 1 },
     { itemId: 3, itemName: "Refrigerator", price: 35000, quantity: 2 },
     { itemId: 4, itemName: "Microwave", price: 8000, quantity: 1 },
     { itemId: 5, itemName: "Television", price: 40000, quantity: 1 },
@@ -31,7 +31,7 @@ function addItem(itemId, itemName, price, quantity) {
 
 // console.log("before adding ", cart.items);
 
-// addItem(5,"goodsleep", 600, 1);
+addItem(13,"this is the new item added", 50000, 1);
 
 // console.log("after adding", cart.items);
 
@@ -50,7 +50,7 @@ function removeItem(itemId) {
 }
 
 // function calling and console
-// removeItem(2)    // now you can see the 2nd object is deleted from the cart
+removeItem(7)    // now you can see the 2nd object is deleted from the cart , in that case A/C will remove
 // console.log(cart.items);
 
 // console.log(cart.items);
@@ -59,6 +59,7 @@ function removeItem(itemId) {
 // *** calculate the total price ***
 
 function calculateTotalprice(){
+
     let pricesum = 0;
     // let discount =0;
     // so now we will calculate the total price of the items which is store in to the cart 
@@ -81,4 +82,29 @@ console.log(calculateTotalprice())
 
 
 
+// discount 
+function itemDiscount(counteddescount) {
+  cart.discount = counteddescount; 
+  cart.totalPrice = cart.totalPrice - (cart.totalPrice * counteddescount / 100)
 
+  
+}
+console.log(itemDiscount(10));
+
+
+
+//  now we will see all these functionalities
+function displayItems() {
+
+  console.log("this is your final items", cart.items);
+  console.log("this is your final price", cart.totalPrice);
+  console.log("this is your final discount", cart.discount);
+  
+  
+  
+  
+}
+
+// console.log(displayItems());
+
+displayItems()
