@@ -166,3 +166,22 @@ removeTodos()
 
 
 
+//  now change the task values by JS , where the tasks status is false change it's in to the true 
+
+function changetaskStatus(){
+  
+    for(let i=0; i< todos[0].length; i++){
+        if(todos[0][i].completed === false){
+            todos[0][i].completed = true
+        }
+    }
+
+}
+
+// console.log("Before:", todos[0]);
+changetaskStatus();
+// console.log("After:", todos[0]);
+
+
+// Display all the tasks with the 
+
