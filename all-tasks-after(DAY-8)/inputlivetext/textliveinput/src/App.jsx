@@ -1,13 +1,13 @@
-
 import { useState } from 'react'
 import './App.css'
 // import { Input } from 'postcss'
 
 function App() {
     
-      
+      // our input state 
       const [input, setInput] = useState("")
 
+      // to get the value from the user input
       const handleChange =(input)=>{
         setInput(input.target.value)
       }
