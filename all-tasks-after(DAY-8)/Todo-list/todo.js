@@ -185,3 +185,17 @@ changetaskStatus();
 
 // Display all the tasks with the 
 
+
+function displayTask() {
+
+    for(let i=0; i< todos[0].length; i++){
+        console.log("Task Name : ", todos[0][i].title)
+        console.log("task status : ", todos[0][i].completed);
+        
+        
+        
+    }
+    
+}
+
+displayTask()
